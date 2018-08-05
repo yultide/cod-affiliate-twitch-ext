@@ -11,6 +11,10 @@ window.Twitch.ext.onAuthorized(function(auth) {
     console.log('The JWT that will be passed to the EBS is', auth.token);
     console.log('The channel ID is', auth.channelId);
     state.auth = auth;
+
+    fetchReferralId(function(id) {
+        $('#affiliateid').val(id);
+    });
 });
 
 
@@ -113,8 +117,3 @@ $('.close').click(function() {
     $('.alert').removeClass('show').addClass('hide')
     return false;
 })
-
-
-fetchReferralId(function(id) {
-    $('#affiliateid').val(id);
-});
