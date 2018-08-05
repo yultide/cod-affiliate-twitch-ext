@@ -7,6 +7,7 @@ body {
 .container {
     /* border: 1px solid red; */
     width: 300px;
+    height: 500px;
     background-color: #2e2525;
     font-size: 9pt;
     text-align: center;
@@ -14,7 +15,7 @@ body {
 
 .image {
     width: 300px;
-    max-height: 470px;
+    max-height: 462px;
     overflow: hidden;
 }
 
@@ -27,4 +28,6 @@ hr {
 .footer {
     padding: 5px;
     padding-bottom: 10px;
+    font-size: 8pt;
+    line-height: 8px;
 }
