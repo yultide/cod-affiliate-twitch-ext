@@ -74,7 +74,9 @@ function fetchReferralId(cb) {
             cb(id);
         },
         error: function(err) {
-            cb('Failed to fetch referral id: ' + err.responseText);
+            //cb('Failed to fetch referral id: ' + err.responseText);
+            console.log('Failed to fetch referral id: ',  err.responseText);
+            cb('');
         }
     });
 }

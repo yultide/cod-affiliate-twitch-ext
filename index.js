@@ -33,7 +33,8 @@ function verifyAndDecode(header) {
             const token = header.substring(bearerPrefix.length);
             console.log('token', token);
             console.log('secret', secret);
-            return jwt.verify(token, secret, { algorithms: ['HS256'] });
+            var secret_buffer  = Buffer(secret, 'base64');
+            return jwt.verify(token, secret_buffer, { algorithms: ['HS256'] });
         }
         catch (ex) {
             console.log(ex);
