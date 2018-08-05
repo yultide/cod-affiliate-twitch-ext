@@ -1,0 +1,13 @@
+{
+  "name": "cod-affiliate-twitch-ext",
+  "version": "1.0.0",
+  "description": "Call of Duty Affiliate Twitch Extension",
+  "main": "index.js",
+  "repository": "https://github.com/yultide/cod-blackops-twitch-ext.git",
+  "author": "Yulius Tjahjadi <yultide@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "lambda-req": "^1.2.3"
+  }
+}

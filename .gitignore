@@ -1,0 +1,9 @@
+.env
+deploy.env
+event.json
+.lambda
+yarn.lock
+node_modules
+context.json
+event_sources.json
+package-lock.json
