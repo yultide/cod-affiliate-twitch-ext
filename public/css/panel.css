@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     color: #ccc;
+    width: 318px;
+    height: 500px;
 }
 
 .container {
@@ -16,6 +18,10 @@ body {
     width: 100%;
     max-height: 462px;
     overflow: hidden;
+}
+.image img {
+    width: 300px;
+    height: 100%;
 }
 
 hr {
