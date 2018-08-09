@@ -10,3 +10,10 @@ $('.dropdown').click(function() {
         container.show();
     }
 });
+
+$(window).on('resize', function() {
+    var win = $(this); //this = window
+    var width = win.width();
+    var height = win.height();
+    $('.offset').css('transform', 'scale(' + ((height - 300)/500) + ')');
+});
