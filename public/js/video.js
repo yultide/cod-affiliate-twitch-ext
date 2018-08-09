@@ -5,9 +5,13 @@ $('.btn-close').click(function() {
 $('.dropdown').click(function() {
     var container = $('.container');
     if (container.is(':visible')) {
-        container.hide();
+        container.addClass('fadeOut').removeClass('fadeIn');
+        setTimeout(function() {
+            container.hide();
+        }, 500);
     } else {
         container.show();
+        container.addClass('fadeIn').removeClass('fadeOut');
     }
 });
 
