@@ -1,3 +1,6 @@
+$(function() {
+
+
 $('.btn-close').click(function() {
     $(document.body).hide();
 });
@@ -15,9 +18,15 @@ $('.dropdown').click(function() {
     }
 });
 
-$(window).on('resize', function() {
-    var win = $(this); //this = window
+function onResize() {
+    var win = $(window); //this = window
     var width = win.width();
     var height = win.height();
     $('.offset').css('transform', 'scale(' + ((height - 200)/540) + ')');
+}
+$(window).on('resize', onResize);
+onResize();
+
+
+
 });

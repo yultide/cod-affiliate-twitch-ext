@@ -1,3 +1,6 @@
+$(function() {
+
+
 // var state = {
 //     auth: {
 //         userId: 'userid',
@@ -80,3 +83,5 @@ setReferralUrl('https://www.amazon.com/Call-Duty-Black-Ops-PC-Standard/dp/B071G5
 
 // setUsername('channelId');
 
+
+})

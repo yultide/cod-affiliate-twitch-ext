@@ -1,3 +1,5 @@
+$(function() {
+
 var state = {}
 // var state = {
 //     auth: {
@@ -118,4 +120,6 @@ $('#affiliateid').change(function() {
 $('.close').click(function() {
     $('.alert').removeClass('show').addClass('hide')
     return false;
+})
+
 })
