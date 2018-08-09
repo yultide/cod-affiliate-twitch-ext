@@ -8,8 +8,8 @@ var state = {};
 var apiUrl = 'https://hxkcztcm5f.execute-api.us-east-2.amazonaws.com/dev/api/'
 
 window.Twitch.ext.onAuthorized(function(auth) {
-    console.log('The JWT that will be passed to the EBS is', auth.token);
-    console.log('The channel ID is', auth.channelId);
+        // console.log('The JWT that will be passed to the EBS is', auth.token);
+        // console.log('The channel ID is', auth.channelId);
     state.auth = auth;
 
     fetchUsername(auth.userId, function (user) {
