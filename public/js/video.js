@@ -15,5 +15,5 @@ $(window).on('resize', function() {
     var win = $(this); //this = window
     var width = win.width();
     var height = win.height();
-    $('.offset').css('transform', 'scale(' + ((height - 300)/500) + ')');
+    $('.offset').css('transform', 'scale(' + ((height - 200)/540) + ')');
 });
